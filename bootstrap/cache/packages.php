@@ -24,13 +24,6 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
-  'laravel/slack-notification-channel' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Illuminate\\Notifications\\SlackChannelServiceProvider',
-    ),
-  ),
   'laravel/tinker' => 
   array (
     'providers' => 
@@ -50,13 +43,6 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    ),
-  ),
-  'spatie/laravel-uptime-monitor' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Spatie\\UptimeMonitor\\UptimeMonitorServiceProvider',
     ),
   ),
 );

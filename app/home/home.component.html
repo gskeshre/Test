@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CRUD System In Angular.</title>
+  </head>
+<body>
+  <div class="container bg-light">
+    <h2>Angular CRUD</h2>
+    <div class="row">
+          <div class="col-sm-12">
+             <div align="right">
+                <a routerLink="create"> Create New User</a>
+             </div>
+          </div>
+        
+        <div class="col-sm-12">
+           <table class="table table-border align=center">
+            <tr>
+              <th>#</th>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th width="223px"> Action</th>
+            </tr>
+            <tr *ngFor="let emp of emps; let j=index">
+              <td>{{ emp.id }}</td>
+              <td>{{ emp.rollno }}</td>
+              <td>{{ emp.name }}</td>
+               <td>
+                 <a [routerLink]="['/show',emp.id]" class="btn btn-primary" style="float: left;">Show</a>    
+                 <a [routerLink]="['/edit',emp.id]"   class="btn btn-info" style="float: center;"> Edit </a> 
+                 <button class="btn btn-danger" (click)="destroy(emp.id)" style="float: right;">Delete</button>
+               </td>
+            </tr>
+           </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
